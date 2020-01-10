@@ -1,0 +1,75 @@
+<html>
+
+	<head>
+
+		<title>Student Registration</title>
+
+	</head>
+
+	<body>
+
+		<div align="Left">
+
+			<h1>Student Registration Portal</h1>
+
+			<form id="xyz">
+
+				Enter name:
+
+				<input type="text" id="name" /><br /><hr />
+
+				Select date of birth:
+
+				<input type="date" id="dob" /><br /><hr />
+
+				Enter branch:
+
+				<input type="text" id="branch" /><br /><hr />
+
+				Select Semester:
+
+				<input type="number" id="semester" max="8" min="0" /><br /><hr />
+
+				Select date of joining:
+
+				<input type="date" id="doj" /><br /><hr />
+
+				Enter University Name:
+
+				<input type="text" id="university" /><br /><hr />
+
+				Enter mobile number:
+
+				<input type="text" id="mobile" /><br /><hr />
+
+				Enter email:
+
+				<input type="text" id="email_add" /><br /><hr />
+
+			</form>
+
+			<button onclick="validate()">Submit</button>
+
+			<p>
+
+			Result: <span id="result"></span>
+
+			</p>
+
+		</div>
+
+	</body>
+
+	<script>
+
+		function validate() 
+
+{
+
+	var result_text = document.getElementById("result");
+
+	var dob = document.getElementById("dob").value;
+
+	var birth_year = parseInt(dob.substring(0, 4));
+
+	var doj = document.getEle
